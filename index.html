@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toronto Star graphic template</title>
+    <link rel="stylesheet" href="https://misc.thestar.com/interactivegraphic/assets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"> 
+
+<style>
+
+.graphic-wrapper {
+  max-width: 600px;
+}
+
+.graphic img{
+    max-height: 40px;
+}
+
+.graphic .resultContainer {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    margin: 40px auto;
+}
+.graphic h4 {
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+}
+
+.flexContainer {
+    display: flex;
+    border-bottom: 0.5px solid #0077BB;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.graphic p {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 10px 0 0; 
+    color: #0077BB;
+    text-align: right;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <div class="graphic-wrapper graphic-1">
+    <!-- <div class="graphic-top">
+        <h2 class="graphic-top__graphic-hed">Add your heading here</h2>
+        <h3 class="graphic-top__graphic-dek">A longer dek could be required to fully explain what the data is. A longer dek could be required to fully explain what the data is.</h3>
+
+        <div class="graphic-legend">
+            <div class="graphic-legend-container">
+                <div class="graphic-legend-dot" id="legend-dot-1"></div><p class="graphic-legend-text">Legend text 1</p>
+            </div>
+            <div class="graphic-legend-container">
+                <div class="graphic-legend-dot" id="legend-dot-2"></div><p class="graphic-legend-text">Legend text 2</p>
+            </div>
+        </div>
+        
+    </div> -->
+    <div class="graphic">
+
+        <div class="resultContainer">
+            <div class="flexContainer">
+            <h4>Chance of happening</h4>
+            <img src="./img/zero-bars.png" alt="a graphic showing zero bars representing low likelyhood">
+        </div>            
+                <div class="textContainer">
+                    <p>Not Likely</p>
+                </div>
+        </div>
+
+        <div class="resultContainer">
+            <div class="flexContainer">
+            <h4>Chance of happening</h4>
+            <img src="./img/one-bars.png" alt="a graphic showing one bar representing small likelyhood">
+        </div>            
+                <div class="textContainer">
+                    <p>Unlikely</p>
+                </div>
+        </div>
+
+        <div class="resultContainer">
+            <div class="flexContainer">
+            <h4>Chance of happening</h4>
+            <img src="./img/two-bars.png" alt="a graphic showing two bars representing some likelyhood">
+        </div>            
+                <div class="textContainer">
+                    <p>Some Likelyhood</p>
+                </div>
+        </div>
+
+        <div class="resultContainer">
+            <div class="flexContainer">
+            <h4>Chance of happening</h4>
+            <img src="./img/three-bars.png" alt="a graphic showing three bars representing some likelyhood">
+        </div>            
+                <div class="textContainer">
+                    <p>Possibly</p>
+                </div>
+        </div>
+
+        <div class="resultContainer">
+            <div class="flexContainer">
+            <h4>Chance of happening</h4>
+            <img src="./img/four-bars.png" alt="a graphic showing four bars representing high likelyhood">
+        </div>            
+                <div class="textContainer">
+                    <p>Very likely</p>
+                </div>
+        </div>
+  
+
+
+    </div>
+
+
+
+   
+
+    <!-- <div class="graphic-bottom">
+        <p class="graphic-bottom__notetext" id="notetext">* Any further note to explain one aspect of the data could go here.</p>
+        <p class="graphic-bottom__graphic-source" id="source">Source: Stats report</p>
+        <p class="graphic-bottom__graphic-byline" id="byline">Toronto Star graphic</p>
+    </div> -->
+  </div>
+
+<script>
+
+
+    function resize(){
+        var message = {'resize': 
+                  {
+                    'iframe':'graphic-iframe-1',
+                    'height': document.getElementsByClassName('graphic-1')[0].offsetHeight + 20
+                  }
+                };
+       
+        parent.postMessage(message, "*");
+    };
+
+    window.addEventListener('load', function() {
+        resize();
+    });
+
+    window.addEventListener("resize", function(){
+        resize();
+    });
+
+    setTimeout(function() {
+                        resize();
+                    }, 800);
+
+  
+	document.addEventListener("touchstart", function(){}, true);
+
+</script>
+
+</body>
+</html>
