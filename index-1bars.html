@@ -51,7 +51,7 @@
 </style>
 </head>
 <body>
-  <div class="graphic-wrapper graphic-1">
+  <div class="graphic-wrapper graphic-2">
     <!-- <div class="graphic-top">
         <h2 class="graphic-top__graphic-hed">Add your heading here</h2>
         <h3 class="graphic-top__graphic-dek">A longer dek could be required to fully explain what the data is. A longer dek could be required to fully explain what the data is.</h3>
@@ -68,7 +68,7 @@
     </div> -->
     <div class="graphic">
 
-        <div id="zero-bars" class="resultContainer">
+        <!-- <div id="zero-bars" class="resultContainer">
             <div class="flexContainer">
             <h4>Chance of happening</h4>
             <img src="./img/zero-bars.png" alt="a graphic showing zero bars representing low likelyhood">
@@ -76,7 +76,7 @@
                 <div class="textContainer">
                     <p>Not Likely</p>
                 </div>
-        </div>
+        </div> -->
 
         <div id="one-bars" class="resultContainer">
             <div class="flexContainer">
@@ -88,7 +88,7 @@
                 </div>
         </div>
 
-        <div id="two-bars" class="resultContainer">
+        <!-- <div id="two-bars" class="resultContainer">
             <div class="flexContainer">
             <h4>Chance of happening</h4>
             <img src="./img/two-bars.png" alt="a graphic showing two bars representing some likelyhood">
@@ -116,7 +116,7 @@
                 <div class="textContainer">
                     <p>Very likely</p>
                 </div>
-        </div>
+        </div> -->
   
 
 
@@ -139,8 +139,8 @@
     function resize(){
         var message = {'resize': 
                   {
-                    'iframe':'graphic-iframe-1',
-                    'height': document.getElementsByClassName('graphic-1')[0].offsetHeight + 20
+                    'iframe':'graphic-iframe-2',
+                    'height': document.getElementsByClassName('graphic-2')[0].offsetHeight + 20
                   }
                 };
        
@@ -163,8 +163,6 @@
 	document.addEventListener("touchstart", function(){}, true);
 
 </script>
-
-<!-- <style>#graphic-iframe-1{padding:0;width:100%;border:0;overflow:hidden;}</style><iframe id="graphic-iframe-1" src="SOURCETKTKTKT" scrolling="no" height="1050" title="embedded content"></iframe> -->
 
 </body>
 </html>
